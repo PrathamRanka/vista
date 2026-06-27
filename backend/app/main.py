@@ -35,7 +35,7 @@ app.add_middleware(
 
 # Register REST Routes
 app.include_router(walk.router, prefix=settings.API_V1_STR)
-app.include_router(ai.router, prefix=settings.API_V1_STR)
+# app.include_router(ai.router, prefix=settings.API_V1_STR)
 app.include_router(memory.router, prefix=settings.API_V1_STR)
 app.include_router(community.router, prefix=settings.API_V1_STR)
 app.include_router(emergency.router, prefix=settings.API_V1_STR)
